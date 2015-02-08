@@ -3,25 +3,20 @@
 	"license": "BSD-3-Clause",
 	"require": {
 		"php": ">=5.3.1",
-		"qa-tools/qa-tools": "~1.0@dev",
-		"qa-tools/behat-extension": "dev-cleanup",
+		"behat/mink-selenium2-driver": "~1.2.0",
 		"mindplay/annotations": "~1.2@dev",
-		"behat/mink": "~1.5@dev",
-		"behat/mink-extension": "*@dev",
-		"behat/mink-selenium2-driver": "~1.1@dev"
+		"qa-tools/qa-tools": "dev-develop",
+		"qa-tools/behat-extension": "dev-master"
 	},
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "/Users/michi/Documents/Workspace/behat-extension"
+			"url": "https://github.com/qa-tools/behat-extension.git"
 		}
 	],
 	"autoload-dev": {
 		"psr-0": {
 			"QATools\\Example": "./src"
 		}
-	},
-	"config": {
-		"bin-dir": "bin/"
 	}
 }

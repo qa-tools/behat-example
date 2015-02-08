@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a9783632148b0efb9fe313da335deff8",
+    "hash": "2d750a7c50062f1f65ae979ad62011ba",
     "packages": [
         {
             "name": "behat/behat",
@@ -147,16 +147,16 @@
         },
         {
             "name": "behat/mink",
-            "version": "dev-master",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/Mink.git",
-                "reference": "1125c2fa97d5b3623786bceadccee7b4bc11335d"
+                "reference": "8b68523a339ec991bcd638b39dc8f04f808da88a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/Mink/zipball/1125c2fa97d5b3623786bceadccee7b4bc11335d",
-                "reference": "1125c2fa97d5b3623786bceadccee7b4bc11335d",
+                "url": "https://api.github.com/repos/minkphp/Mink/zipball/8b68523a339ec991bcd638b39dc8f04f808da88a",
+                "reference": "8b68523a339ec991bcd638b39dc8f04f808da88a",
                 "shasum": ""
             },
             "require": {
@@ -172,7 +172,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev"
+                    "dev-master": "1.6.x-dev"
                 }
             },
             "autoload": {
@@ -198,20 +198,20 @@
                 "testing",
                 "web"
             ],
-            "time": "2015-02-04 17:30:41"
+            "time": "2015-02-04 17:02:06"
         },
         {
             "name": "behat/mink-extension",
-            "version": "dev-master",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/MinkExtension.git",
-                "reference": "ba5329be65a816adfc2d9ba9b639a92f548371da"
+                "reference": "06a4cb56614b047d8d15ea5cd392d19fd3d856e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkExtension/zipball/ba5329be65a816adfc2d9ba9b639a92f548371da",
-                "reference": "ba5329be65a816adfc2d9ba9b639a92f548371da",
+                "url": "https://api.github.com/repos/Behat/MinkExtension/zipball/06a4cb56614b047d8d15ea5cd392d19fd3d856e8",
+                "reference": "06a4cb56614b047d8d15ea5cd392d19fd3d856e8",
                 "shasum": ""
             },
             "require": {
@@ -221,7 +221,7 @@
                 "symfony/config": "~2.2"
             },
             "require-dev": {
-                "behat/mink-goutte-driver": "~1.1@dev",
+                "behat/mink-goutte-driver": "~1.0",
                 "phpspec/phpspec": "~2.0"
             },
             "type": "behat-extension",
@@ -257,36 +257,36 @@
                 "test",
                 "web"
             ],
-            "time": "2015-01-23 00:01:18"
+            "time": "2014-09-23 10:59:27"
         },
         {
             "name": "behat/mink-selenium2-driver",
-            "version": "dev-master",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkSelenium2Driver.git",
-                "reference": "ce4766aa715ebad3a96a73bffb507c8b723e404b"
+                "reference": "8018fee80bf6573f909ece3e0dfc07d0eb352210"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/ce4766aa715ebad3a96a73bffb507c8b723e404b",
-                "reference": "ce4766aa715ebad3a96a73bffb507c8b723e404b",
+                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/8018fee80bf6573f909ece3e0dfc07d0eb352210",
+                "reference": "8018fee80bf6573f909ece3e0dfc07d0eb352210",
                 "shasum": ""
             },
             "require": {
-                "behat/mink": "~1.7@dev",
+                "behat/mink": "~1.6@dev",
                 "instaclick/php-webdriver": "~1.1",
                 "php": ">=5.3.1"
             },
             "type": "mink-driver",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Behat\\Mink\\Driver\\": "src/"
+                "psr-0": {
+                    "Behat\\Mink\\Driver": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -315,7 +315,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2015-02-05 21:52:17"
+            "time": "2014-09-29 13:12:12"
         },
         {
             "name": "behat/transliterator",
@@ -467,18 +467,22 @@
         },
         {
             "name": "qa-tools/behat-extension",
-            "version": "dev-cleanup",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/Users/michi/Documents/Workspace/behat-extension",
-                "reference": "89e0e7023247d2b617a58d81ade3df6100a528d6"
+                "url": "https://github.com/qa-tools/behat-extension.git",
+                "reference": "2e651b5958cf609984d654581a574521e965a4f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qa-tools/behat-extension/zipball/2e651b5958cf609984d654581a574521e965a4f1",
+                "reference": "2e651b5958cf609984d654581a574521e965a4f1",
+                "shasum": ""
             },
             "require": {
                 "behat/mink-extension": "~2.0@dev",
-                "mindplay/annotations": "~1.2@dev",
                 "php": ">=5.3.1",
-                "qa-tools/qa-tools": "~1.0@dev",
-                "symfony/yaml": "*@dev"
+                "qa-tools/qa-tools": "*@dev"
             },
             "require-dev": {
                 "aik099/coding-standard": "dev-master",
@@ -513,7 +517,11 @@
                 "QA-Tools",
                 "page"
             ],
-            "time": "2014-08-21 21:41:54"
+            "support": {
+                "source": "https://github.com/qa-tools/behat-extension/tree/master",
+                "issues": "https://github.com/qa-tools/behat-extension/issues"
+            },
+            "time": "2014-08-18 08:56:31"
         },
         {
             "name": "qa-tools/qa-tools",
@@ -521,12 +529,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qa-tools/qa-tools.git",
-                "reference": "62199337a1711fedbe4ae6dd4883637f230ec252"
+                "reference": "6f676e09d5283adcde6a13cd1f183e5bef941cac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qa-tools/qa-tools/zipball/62199337a1711fedbe4ae6dd4883637f230ec252",
-                "reference": "62199337a1711fedbe4ae6dd4883637f230ec252",
+                "url": "https://api.github.com/repos/qa-tools/qa-tools/zipball/6f676e09d5283adcde6a13cd1f183e5bef941cac",
+                "reference": "6f676e09d5283adcde6a13cd1f183e5bef941cac",
                 "shasum": ""
             },
             "require": {
@@ -587,7 +595,7 @@
                 "phpunit",
                 "tests"
             ],
-            "time": "2015-02-01 11:47:19"
+            "time": "2015-02-08 17:57:00"
         },
         {
             "name": "symfony/class-loader",
@@ -1066,26 +1074,18 @@
             "time": "2015-01-25 04:39:26"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "qa-tools/qa-tools": 20,
-        "qa-tools/behat-extension": 20,
         "mindplay/annotations": 20,
-        "behat/mink": 20,
-        "behat/mink-extension": 20,
-        "behat/mink-selenium2-driver": 20
+        "qa-tools/qa-tools": 20,
+        "qa-tools/behat-extension": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.1"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
