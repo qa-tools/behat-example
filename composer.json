@@ -4,6 +4,8 @@
 	"require": {
 		"php": ">=5.3.1",
 		"behat/mink-selenium2-driver": "~1.2.0",
+        "behat/behat": "~3.0",
+        "behat/mink-extension": "~2.0",
 		"mindplay/annotations": "~1.2@dev",
 		"qa-tools/qa-tools": "dev-develop",
 		"qa-tools/behat-extension": "dev-master"
@@ -11,7 +13,7 @@
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "https://github.com/qa-tools/behat-extension.git"
+			"url": "https://github.com/evangelion1204/behat-extension.git"
 		}
 	],
 	"autoload-dev": {

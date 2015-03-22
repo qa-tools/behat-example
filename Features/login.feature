@@ -5,12 +5,13 @@ Feature: Login
 
 	@javascript @login @failing-login
 	Scenario: Failing login due wrong password
-		Given the user visits the "Login Page"
-		When the user enters user and invalidpassword
-		And the login should fail
+		Given I'm on 'Login Page'
+		When I login with 'username' and 'wrong password'
+		Then I should be on 'Login page'
+		And I should see 'invalid username or password' error message
 
 	@javascript @login @successful-login
 	Scenario: Successful login of user
-		Given the user visits the "Login Page"
-		When the user enters user and validpassword
-		And the login should succeed
+		Given I'm on 'Login Page'
+		When I login with 'username' and 'password'
+		Then I should be on 'Account Page'
