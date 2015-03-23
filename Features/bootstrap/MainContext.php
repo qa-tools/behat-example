@@ -39,11 +39,13 @@ class MainContext extends QAToolsContext
 	 */
 	public function errorMessageVisible($message)
 	{
-
+		if ( $this->page->errorPane->getText() !== $message ) {
+			throw new Exception('Error message "' . $message . '" not visible!');
+		};
 	}
 
 	/**
-	 * @Given /^the user waits for ([0-9]+) seconds$/
+	 * @Given /^I wait for ([0-9]+) seconds$/
 	 */
 	public function waitFor($seconds)
 	{

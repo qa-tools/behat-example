@@ -12,13 +12,14 @@ namespace QATools\Example\Pages;
 
 
 use QATools\QATools\HtmlElements\Element\Form;
+use QATools\QATools\HtmlElements\Element\TextBlock;
 use QATools\QATools\HtmlElements\TypifiedPage;
 
 /**
  * Class LoginPage.
  *
  * @page-url('/')
- * @page-match-url('/')
+ * @page-url-match('path' => '/')
  */
 class LoginPage extends TypifiedPage
 {
@@ -29,7 +30,15 @@ class LoginPage extends TypifiedPage
 	 * @var Form
 	 * @find-by('id' => 'login-form')
 	 */
-	protected $loginForm;
+	public $loginForm;
+
+	/**
+	 * The error label.
+	 *
+	 * @var TextBlock
+	 * @find-by('css' => '.alert')
+	 */
+	public $errorPane;
 
 	/**
 	 * Does the login.

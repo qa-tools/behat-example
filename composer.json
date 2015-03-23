@@ -7,14 +7,10 @@
         "behat/behat": "~3.0",
         "behat/mink-extension": "~2.0",
 		"mindplay/annotations": "~1.2@dev",
-		"qa-tools/qa-tools": "dev-121-page-matcher",
-		"qa-tools/behat-extension": "dev-cleanup"
+		"qa-tools/qa-tools": "dev-develop",
+		"qa-tools/behat-extension": "dev-develop"
 	},
 	"repositories": [
-        {
-          "type": "vcs",
-          "url": "https://github.com/evangelion1204/qa-tools.git"
-        },
         {
 			"type": "vcs",
 			"url": "https://github.com/evangelion1204/behat-extension.git"

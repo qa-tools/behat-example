@@ -8,7 +8,7 @@ Feature: Login
 		Given I'm on 'Login Page'
 		When I login with 'username' and 'wrong password'
 		Then I should be on 'Login page'
-		And I should see 'invalid username or password' error message
+		And I should see 'Invalid username or password!' error message
 
 	@javascript @login @successful-login
 	Scenario: Successful login of user

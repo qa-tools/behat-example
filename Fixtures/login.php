@@ -9,15 +9,18 @@
  */
 
 if ( empty($_POST) ) {
-	header('Location: index.html');
+	header('Location: /?error');
+	die();
 }
 
-if ( $_POST['username'] != 'user' ) {
-	header('Location: index.html');
+if ( $_POST['username'] !== 'username' ) {
+	header('Location: /?error');
+	die();
 }
 
-if ( $_POST['password'] != 'validpassword' ) {
-	header('Location: index.html');
+if ( $_POST['password'] !== 'password' ) {
+	header('Location: /?error');
+	die();
 }
 
-header('Location: account.html');
+header('Location: /account.html');
