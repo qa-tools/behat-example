@@ -18,6 +18,7 @@ use QATools\QATools\HtmlElements\TypifiedPage;
  * Class LoginPage.
  *
  * @page-url('/')
+ * @page-match-url('/')
  */
 class LoginPage extends TypifiedPage
 {
@@ -31,42 +32,22 @@ class LoginPage extends TypifiedPage
 	protected $loginForm;
 
 	/**
-	 * Fill the login form with given data.
+	 * Does the login.
 	 *
 	 * @param string $username The username.
 	 * @param string $password The password.
+	 * @param string $success The success page.
+	 * @param string $failure The failure page.
 	 *
 	 * @return static
 	 */
-	public function fillForm($username, $password)
+	public function login($username, $password)
 	{
 		$this->loginForm->fill(array(
 			'username' => $username,
 			'password' => $password,
 		));
 
-		return $this;
-	}
-
-	/**
-	 * Does the login.
-	 *
-	 * @return Page
-	 */
-	public function loginSuccess()
-	{
-		$this->loginForm->submit();
-
-		return $this->pageFactory->getPage('Account Page');
-	}
-
-	/**
-	 * Does a failing login.
-	 *
-	 * @return Page
-	 */
-	public function loginFailure()
-	{
 		$this->loginForm->submit();
 
 		return $this;

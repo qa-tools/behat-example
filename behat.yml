@@ -14,5 +14,5 @@ default:
 
     QATools\BehatExtension:
       qa_tools:
-        base_url: 'http://localhost'
-        page_namespace_§prefix: ['\QATools\Example\Pages']
+        base_url: 'http://behat-example.qa-tools.io'
+        page_namespace_prefix: ['\QATools\Example\Pages']

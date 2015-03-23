@@ -6,27 +6,40 @@ class MainContext extends QAToolsContext
 {
 
 	/**
-	 * @When /^the user enters (.+?) and (.+?)$/
+	 * @Given I'm on ':page'
 	 */
-	public function fillForm($username, $password)
+	public function openPage($page)
 	{
-		$this->page->fillForm($username, $password);
+		$this->page = $this->pageFactory->getPage($page);
+		$this->page->open();
 	}
 
 	/**
-	 * @Then /^the login should fail$/
+	 * @When I login with ':username' and ':password'
 	 */
-	public function loginFail()
+	public function login($username, $password)
 	{
-		$this->page = $this->page->loginFailure();
+		$this->page->login($username, $password);
 	}
 
 	/**
-	 * @Then /^the login should succeed/
+	 * @Then I should be on ':page'
 	 */
-	public function loginSucceed()
+	public function pageOpen($page)
 	{
-		$this->page = $this->page->loginSuccess();
+		$this->page = $this->pageFactory->getPage($page);
+
+		if ( !$this->page->opened() ) {
+			throw new Exception($page . ' is not open!');
+		}
+	}
+
+	/**
+	 * @Then I should see ':message' error message
+	 */
+	public function errorMessageVisible($message)
+	{
+
 	}
 
 	/**
