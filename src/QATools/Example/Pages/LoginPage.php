@@ -19,7 +19,7 @@ use QATools\QATools\HtmlElements\TypifiedPage;
  * Class LoginPage.
  *
  * @page-url('/')
- * @page-url-match('path' => '/')
+ * @url-match-full('/')
  */
 class LoginPage extends TypifiedPage
 {

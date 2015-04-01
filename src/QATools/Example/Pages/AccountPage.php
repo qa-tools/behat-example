@@ -18,7 +18,7 @@ use QATools\QATools\HtmlElements\TypifiedPage;
  * Class LoginPage.
  *
  * @page-url('/account.html')
- * @page-url-match('path' => '/account.html')
+ * @url-match-full('/account.html')
  */
 class AccountPage extends TypifiedPage
 {
